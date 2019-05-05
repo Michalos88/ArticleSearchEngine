@@ -1,10 +1,11 @@
 import time
 import logging
 from datetime import datetime, timedelta
+from controllers.utils import parseArticle
 import requests
 import os
 import json
-
+import uuid
 
 class NewsScraper():
   def __init__(self,
@@ -21,15 +22,15 @@ class NewsScraper():
       articles = []
       logging.warning("getArticles/crashed")
       logging.error(str(e))
+    for article in articles:
+      article['content'] = parseArticle(article['url'])
+      article['_id'] = str(uuid.uuid4())
+      self._saveToFile(article)
+    return articles
 
-    self._saveToFile(articles,self.db+'/'+sourceName+'.json')
-
-  def _saveToFile(self,articles,fileName):
-
-    with open(fileName, 'w') as f:
-      json.dump(articles, f)
-
-    logging.info('Saved {0} articles'.format(len(articles)))
+  def _saveToFile(self,article):
+    with open(self.db+'/'+str(article['_id'])+'.json', 'w') as f:
+      json.dump(article, f)
 
   def _trendingCall(self,mediaOutletName):
 
