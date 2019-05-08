@@ -7,7 +7,7 @@ class Trie:
   def __init__(self):
     """Initialises the trie"""
     self._root = _Root()
-    self.top_index = 0
+    self.topIndex = 0
 
   def isEmpty(self):
     """Checks if the trie is empty"""
@@ -28,8 +28,8 @@ class Trie:
     try:
       return node['__index__']
     except KeyError:
-      node['__index__'] = self.top_index
-      self.top_index+=1
+      node['__index__'] = self.topIndex
+      self.topIndex+=1
       return node['__index__']
 
   def getIndex(self, word):

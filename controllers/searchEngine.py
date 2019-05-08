@@ -2,6 +2,8 @@ from controllers.trie import Trie
 from controllers.utils import checkNltkData
 from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.corpus import stopwords
+# from sklearn.feature_extraction.text import TfidfVectorizer
+
 import logging
 import re
 
@@ -25,9 +27,11 @@ class SearchEngine:
         except:
           self.occupancy[idx] = [page['_id']]
 
+  ### TODO: DECIDE IF YOU WANT TO GIVE ARTICLES WITH HALF QUERY
   def query(self, query):
     output = list()
     words = word_tokenize(query)
+    words = list(set(words))
     putativeMatches = list()
     for word in words:
       idx = self.trie.getIndex(word)
@@ -36,9 +40,16 @@ class SearchEngine:
 
     uniqueMatches = list(set(putativeMatches))
     for match in uniqueMatches:
-      if putativeMatches.count(match) == len(words):
+      if putativeMatches.count(match) >= len(words):
         output.append(match)
     return output
+
+  def _retrieve_documents(self, ids):
+    pages = list()
+    pass
+
+  def _rank(self, pages):
+    pass
 
   def _clean_text(self, text):
     links = re.findall(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', text)
