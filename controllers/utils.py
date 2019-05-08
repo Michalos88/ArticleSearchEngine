@@ -1,10 +1,6 @@
 import nltk
 from newspaper import Article
 
-
-def clean_articles(articles):
-  stop_words= set(stopwords.words('english'))
-
 def parseArticle(url):
   try:
     article = Article(url)

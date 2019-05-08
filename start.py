@@ -27,17 +27,17 @@ while run:
 
   if selection=='1':
     if not se.trie.isEmpty():
-      search_query = input('Your Query: ')
-      se.query(search_query)
+      searchQuery = input('Your Query: ')
+      se.query(searchQuery)
     else:
       print('The Search Engine is empty!')
       print('Load or Build the DataBase!')
   elif selection == '2':
     try:
       with open('searchEngine_state.pkl','rb') as f:
-        se_load = pickle.load(f)
-        se.trie = se_load.trie
-        se.occupancy = se_load.occupancy
+        seLoad = pickle.load(f)
+        se.trie = seLoad.trie
+        se.occupancy = seLoad.occupancy
         # se.db = se_load.db
       print('SearchEngine State Loaded')
     except FileNotFoundError:
@@ -51,7 +51,6 @@ while run:
   elif selection =='4':
     if not se.trie.isEmpty():
       print("Number of words in Search Engine:",se.trie.topIndex)
-      # print("Number of articles in the Database:",len(se.occupancy))
     else:
       print('The Search Engine is empty!')
       print('Load or Build the DataBase!')

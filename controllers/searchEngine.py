@@ -24,7 +24,7 @@ class SearchEngine:
 
   def addPages(self, pages):
     for page in pages:
-      words = self._clean_text(page['content'])
+      words = self._cleanText(page['content'])
       for word in words:
         idx = self.trie.addChild(word)
         try:
@@ -34,8 +34,8 @@ class SearchEngine:
 
   ### TODO: DECIDE IF YOU WANT TO GIVE ARTICLES WITH HALF QUERY
   def query(self, query):
-    selected_ids = list()
-    words = self._clean_text(query)
+    selectedIds = list()
+    words = self._cleanText(query)
     words = list(set(words))
     putativeMatches = list()
     for word in words:
@@ -46,9 +46,9 @@ class SearchEngine:
     uniqueMatches = list(set(putativeMatches))
     for match in uniqueMatches:
       if putativeMatches.count(match) >= len(words):
-        selected_ids.append(match)
-    if len(selected_ids)>0:
-      pages = self._retrieve_documents(selected_ids).dropna(axis=0)
+        selectedIds.append(match)
+    if len(selectedIds)>0:
+      pages = self._retrieveDocuments(selectedIds).dropna(axis=0)
       texts = pages['content'].values.tolist()
       pages['ranking'] = self._rank(texts, words)
       pages = pages.sort_values('ranking',ascending=False)
@@ -66,7 +66,7 @@ class SearchEngine:
     else:
       print('No Pages Matching The Query')
 
-  def _retrieve_documents(self, ids):
+  def _retrieveDocuments(self, ids):
     pages = list()
     for id_ in ids:
       try:
@@ -89,7 +89,7 @@ class SearchEngine:
     ranking = ranking/len(documents)
     return ranking
 
-  def _clean_text(self, text):
+  def _cleanText(self, text):
     links = re.findall(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', text)
     tags = re.findall(r'#\w+\b', text)
     emojis = re.findall(r'[^\x00-\x7F]', text) # TODO: Sometimes UTF's are not emojis like '
