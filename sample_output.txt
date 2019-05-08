@@ -1,0 +1,347 @@
+########## Menu ##########
+1: Search
+2: Load the Database From File
+3: Build New Database (requires NewsApi Key)
+4: Get Statistics
+5: Save State
+6: Exit
+Your Choice: 1
+##########################
+The Search Engine is empty!
+Load or Build the DataBase!
+########## Menu ##########
+1: Search
+2: Load the Database From File
+3: Build New Database (requires NewsApi Key)
+4: Get Statistics
+5: Save State
+6: Exit
+Your Choice: 2
+##########################
+SearchEngine State Loaded
+########## Menu ##########
+1: Search
+2: Load the Database From File
+3: Build New Database (requires NewsApi Key)
+4: Get Statistics
+5: Save State
+6: Exit
+Your Choice: 4
+##########################
+Number of words in Search Engine: 9712
+########## Menu ##########
+1: Search
+2: Load the Database From File
+3: Build New Database (requires NewsApi Key)
+4: Get Statistics
+5: Save State
+6: Exit
+Your Choice: 1
+##########################
+Your Query: sdlfjasldfj
+No Pages Matching The Query
+########## Menu ##########
+1: Search
+2: Load the Database From File
+3: Build New Database (requires NewsApi Key)
+4: Get Statistics
+5: Save State
+6: Exit
+Your Choice: 1
+##########################
+Your Query: 
+No Pages Matching The Query
+########## Menu ##########
+1: Search
+2: Load the Database From File
+3: Build New Database (requires NewsApi Key)
+4: Get Statistics
+5: Save State
+6: Exit
+Your Choice: 1
+##########################
+Your Query: China and Russia
+##########################
+Title: Donald Trump’s trade war hots up
+Author: The Economist
+Source: The Economist
+Excerpt: CHINA’S PROPAGANDA machine grinds slowly. But its output is nothing if not consistent. It took more than 24 hours for state media to report President Donald Trump’s threats, tweeted on May 5th, to ratchet up tariffs on China. By that time Chinese stocks had already plunged, a foretaste of global market ructions. When the response finally came in of
+Relevancy Score: 3.56
+##########################
+Title: How months of trade negotiations between China and the U.S. blew up in an instant
+Author: Reuters
+Source: Financial Post
+Excerpt: WASHINGTON/BEIJING — The diplomatic cable from Beijing arrived in Washington late on Friday night, with systematic edits to a nearly 150-page draft trade agreement that would blow up months of negotiations between the world’s two largest economies, according to three U.S. government sources and three private sector sources briefed on the talks.
+
+Th
+Relevancy Score: 2.11
+##########################
+Title: Top Dem claims Mueller report shows Russia ‘artificially’ placed Trump in White House
+Author: Fox News
+Source: Fox News
+Excerpt: A top Democratic lawmaker claimed Wednesday that Special Counsel Robert Mueller’s Russia report shows Moscow “artificially” placed President Trump in the White House -- despite the report finding no evidence of Trump-Russia collusion.
+
+The statement came amid a fiery session of the House Judiciary Committee where lawmakers weighed holding Attorney 
+Relevancy Score: 1.18
+##########################
+Title: Crashed Russian plane communication leaks: 'For now everything is OK. Normal.'
+Author: Patrick Reevell
+Source: ABC News
+Excerpt: A transcript of the communications between air traffic controllers and the pilots of a Russian airliner that made a deadly crash landing at a Moscow airport has appeared in the Russian media.
+
+Interested in Russia? Add Russia as an interest to stay up to date on the latest Russia news, video, and analysis from ABC News. Add Interest
+
+The transcript
+Relevancy Score: 1.06
+##########################
+Title: Daily Crunch: We round up all the Google I/O news
+Author: Anthony Ha
+Source: TechCrunch
+Excerpt: Daily Crunch: We round up all the Google I/O news
+
+Google unveils new Pixel 3 phones, Bird will start selling directly to consumers and PUBG takes a hit in China. Here’s your Daily Crunch for May 8, 2019.
+
+1. Here’s everything Google announced today at the I/O 2019 Keynote
+
+Google’s developer conference is still underway, but we’ve rounded up every
+Relevancy Score: 0.99
+##########################
+Title: Vancouver money laundering not just found in casinos. It’s fuelling a booming luxury car business, too
+Author: Bloomberg News
+Source: Financial Post
+Excerpt: Grocery bags full of cash hauled into car dealerships. Gangsters paying for auto leases with proceeds of crime. A thriving grey market in which Chinese buyers pay people to purchase cars in Vancouver and claim millions of dollars in sales tax refunds.
+
+Those are some of the scenes uncovered by the provincial government’s latest probe into dirty mon
+Relevancy Score: 0.95
+########## Menu ##########
+1: Search
+2: Load the Database From File
+3: Build New Database (requires NewsApi Key)
+4: Get Statistics
+5: Save State
+6: Exit
+Your Choice: 1
+##########################
+Your Query: Oil
+##########################
+Title: Warren Buffett explains why he's making a bet in the energy industry
+Author: Yun Li
+Source: CNBC
+Excerpt: Warren Buffett has shown a bigger interest in the oil industry with Berkshire Hathaway's recent $10 billion investment to back Occidental Petroleum's bid for Anadarko Petroleum, and he said it's a bet on the Permian Basin.
+
+"I mean the Permian Basin is four million barrels a day. It's incredible," Buffett told CNBC's Becky Quick in an interview bef
+Relevancy Score: 1.29
+##########################
+Title: Down to Business podcast: The Canadian oil industry — with guest Peter Tertzakian
+Author: Emily Jackson
+Source: Financial Post
+Excerpt: Welcome to Down to Business, a weekly podcast from the Financial Post.
+
+For our third episode, host Emily Jackson is joined by Peter Tertzakian, executive director of the ARC Energy Research Institute, an economist who has more than 30 years of experience in the oil industry — he also drives an electric car.
+
+You can listen below — or on Apple Podc
+Relevancy Score: 0.85
+##########################
+Title: US dismisses Iran's threats to withdraw from nuclear deal
+Author: Conor Finnegan
+Source: ABC News
+Excerpt: One year after President Donald Trump withdrew the U.S. from the Iran nuclear deal, Iran warned the pact's remaining signatories that it would stop implementing parts of the agreement if they don't improve economic cooperation with the country.
+
+Interested in Iran? Add Iran as an interest to stay up to date on the latest Iran news, video, and analy
+Relevancy Score: 0.51
+##########################
+Title: American companies are spending millions in an effort to get the new NAFTA ratified
+Author: Bloomberg News
+Source: Financial Post
+Excerpt: Automakers, retailers and oil drillers are among the hundreds of companies that rebelled against President Donald Trump’s tariffs and threats to walk away from long-standing trade agreements, but they’re rallying behind his latest pact with Canada and Mexico that faces steep hurdles in Congress.
+
+The companies have joined with major business groups
+Relevancy Score: 0.24
+##########################
+Title: America and Iran are on a collision course
+Author: The Economist
+Source: The Economist
+Excerpt: “THE UNITED STATES is not seeking war with the Iranian regime,” declared John Bolton, America’s national security adviser, when he announced on May 5th the deployment of an aircraft-carrier strike group from the Mediterranean to waters near Iran. It would be led by the USS Abraham Lincoln. A separate bomber task-force was also being deployed to the
+Relevancy Score: 0.24
+##########################
+Title: A misleading anti-oilsands National Geographic article proves to be so very wrong about science
+Author: Special to Financial Post
+Source: Financial Post
+Excerpt: National Geographic published an online article on April 11th about oilsands development in northern Alberta. Called “This is the world’s most destructive oil operation — and it’s growing,” the article, by a Toronto-based reporter, made claims about health effects in Fort Chipewyan caused by oilsands development activities, including cancer, stillb
+Relevancy Score: 0.15
+########## Menu ##########
+1: Search
+2: Load the Database From File
+3: Build New Database (requires NewsApi Key)
+4: Get Statistics
+5: Save State
+6: Exit
+Your Choice: 1
+##########################
+Your Query: Trump, Facebook, Facebook,  Facebook, Facebook,  Facebook, Facebook,  Facebook, Facebook,  Facebook, Facebook,  Facebook, Facebook,  Facebook, Facebook,  Facebook, Facebook,  Facebook, Facebook,  Facebook, Facebook,  Facebook, Facebook,  Facebook, Facebook,  Facebook, Facebook,  Facebook, Facebook,  
+##########################
+Title: Blumenthal and Hawley on Facebook’s $5 billion fine: not good enough
+Author: Emily Stewart
+Source: Recode
+Excerpt: A bipartisan pair of US senators is calling for federal regulators to crack down on Facebook.
+
+Sens. Richard Blumenthal (D-CT) and Josh Hawley (R-MO) on Monday sent a letter to the Federal Trade Commission, which is currently investigating Facebook’s handling of user data and potential privacy violations. In it, they called Facebook’s expected sett
+Relevancy Score: 1.47
+##########################
+Title: Trump retweets conspiracy theorists, far-right figures after Facebook bans
+Author: Tom DiChristopher
+Source: CNBC
+Excerpt: President Donald Trump on Saturday retweeted messages from conspiracy theorists and far-right figures after Facebook banned several right-wing personalities for promoting violence and hate.
+
+Trump has lashed out against Facebook following the bans, tweeting on Friday that he is "continuing to monitor the censorship of AMERICAN CITIZENS on social me
+Relevancy Score: 1.16
+##########################
+Title: Facebook stops blocking some blockchain ads
+Author: Josh Constine
+Source: TechCrunch
+Excerpt: Facebook still won’t let you advertise for ICOs or binaries, and ads for cryptocurrencies and exchanges need prior approval. But a year after banning all blockchain-related ads, it’s reopening to ones for “blockchain technology, industry news, education or events related to cryptocurrency” without the need for pre-approval.
+
+The change could be a b
+Relevancy Score: 1.14
+##########################
+Title: Keeping Trump’s Tax Returns Secret Is an Insanely Huge Security Risk
+Author: Jonathan Chait
+Source: New York Magazine
+Excerpt: Photo: BRENDAN SMIALOWSKI/AFP/Getty Images
+
+Last year, the New York Times found that Trump had inherited more than $400 million from his father, largely through a series of illegal schemes. Now, in a new report, the Times has discovered that, from 1985 through 1994, Trump businesses suffered losses of more than $1 billion.
+
+It’s hardly a mystery wh
+Relevancy Score: 0.82
+##########################
+Title: Trump responds to report he lost almost $1.2 billion over decade
+Author: John Santucci and Mark Osborne
+Source: ABC News
+Excerpt: President Donald Trump is still fighting Congress over the release of his tax returns, but a new report on Tuesday analyzing his official Internal Revenue Service tax transcripts, with the figures from his federal tax forms, shows he lost over $1 billion from 1985 to 1994.
+
+Interested in Donald Trump? Add Donald Trump as an interest to stay up to d
+Relevancy Score: 0.74
+##########################
+Title: There Is No Way Donald Trump Actually Lost $1.17 Billion
+Author: Josh Barro
+Source: New York Magazine
+Excerpt: The biggest loser? Photo: Jeffrey Asher/Getty Images
+
+You can’t lose over a billion dollars if you don’t have over a billion dollars to begin with. You can do things that cause over a billion dollars in losses, but you can’t bear them yourself — other parties, such as business partners and lenders and vendors, get stuck holding much of the bag. The
+Relevancy Score: 0.64
+########## Menu ##########
+1: Search
+2: Load the Database From File
+3: Build New Database (requires NewsApi Key)
+4: Get Statistics
+5: Save State
+6: Exit
+Your Choice: 1
+##########################
+Your Query: Meghan Markle and Prince Harry
+##########################
+Title: Prince Harry and Meghan Markle reveal Baby Sussex's name
+Author: Fox News
+Source: Fox News
+Excerpt: Prince Harry and Meghan Markle revealed their royal baby's name on Wednesday.
+
+Baby Sussex's name is Archie Harrison Mountbatten-Windsor.
+
+"The Duke and Duchess of Sussex are pleased to announce they have named their first born child: Archie Harrison Mountbatten-Windsor," the new parents wrote on Instagram.
+
+
+
+"This afternoon Their Royal Highnesses
+Relevancy Score: 33.92
+##########################
+Title: Meghan Markle and Prince Harry skip the royal baby photo. But Meghan's femininity stays in the spotlight.
+Author: MSNBC
+Source: MSNBC
+Excerpt: Meghan Markle and Prince Harry skip the (first) royal baby photo. But Meghan's femininity stays in the spotlight.
+
+When it comes to the royal presentation of womanhood, the Duchess of Sussex is caught between the queen and the commentariat.
+Relevancy Score: 26.54
+########## Menu ##########
+1: Search
+2: Load the Database From File
+3: Build New Database (requires NewsApi Key)
+4: Get Statistics
+5: Save State
+6: Exit
+Your Choice: 1
+##########################
+Your Query: Meghan Markle and Prince Harry and Trump
+##########################
+Title: Prince Harry and Meghan Markle reveal Baby Sussex's name
+Author: Fox News
+Source: Fox News
+Excerpt: Prince Harry and Meghan Markle revealed their royal baby's name on Wednesday.
+
+Baby Sussex's name is Archie Harrison Mountbatten-Windsor.
+
+"The Duke and Duchess of Sussex are pleased to announce they have named their first born child: Archie Harrison Mountbatten-Windsor," the new parents wrote on Instagram.
+
+
+
+"This afternoon Their Royal Highnesses
+Relevancy Score: 9.48
+##########################
+Title: Keeping Trump’s Tax Returns Secret Is an Insanely Huge Security Risk
+Author: Jonathan Chait
+Source: New York Magazine
+Excerpt: Photo: BRENDAN SMIALOWSKI/AFP/Getty Images
+
+Last year, the New York Times found that Trump had inherited more than $400 million from his father, largely through a series of illegal schemes. Now, in a new report, the Times has discovered that, from 1985 through 1994, Trump businesses suffered losses of more than $1 billion.
+
+It’s hardly a mystery wh
+Relevancy Score: 1.95
+##########################
+Title: Trump responds to report he lost almost $1.2 billion over decade
+Author: John Santucci and Mark Osborne
+Source: ABC News
+Excerpt: President Donald Trump is still fighting Congress over the release of his tax returns, but a new report on Tuesday analyzing his official Internal Revenue Service tax transcripts, with the figures from his federal tax forms, shows he lost over $1 billion from 1985 to 1994.
+
+Interested in Donald Trump? Add Donald Trump as an interest to stay up to d
+Relevancy Score: 1.74
+##########################
+Title: There Is No Way Donald Trump Actually Lost $1.17 Billion
+Author: Josh Barro
+Source: New York Magazine
+Excerpt: The biggest loser? Photo: Jeffrey Asher/Getty Images
+
+You can’t lose over a billion dollars if you don’t have over a billion dollars to begin with. You can do things that cause over a billion dollars in losses, but you can’t bear them yourself — other parties, such as business partners and lenders and vendors, get stuck holding much of the bag. The
+Relevancy Score: 1.53
+##########################
+Title: Donald Trump's emperor-has-no-clothes moment on his wealth is here
+Author: Analysis by Chris Cillizza, CNN Editor-at-large
+Source: CNN
+Excerpt: (CNN) President Donald Trump's entire persona is built on a singular idea: He's the brash, break-all-the-rules billionaire. Like him or hate him, you can't help but admire his massive wealth and the smarts that allowed him to accrue it.
+
+"I'm the most successful person ever to run for the presidency, by far," he told the Des Moines Register just be
+Relevancy Score: 1.42
+##########################
+Title: Top Dem claims Mueller report shows Russia ‘artificially’ placed Trump in White House
+Author: Fox News
+Source: Fox News
+Excerpt: A top Democratic lawmaker claimed Wednesday that Special Counsel Robert Mueller’s Russia report shows Moscow “artificially” placed President Trump in the White House -- despite the report finding no evidence of Trump-Russia collusion.
+
+The statement came amid a fiery session of the House Judiciary Committee where lawmakers weighed holding Attorney 
+Relevancy Score: 1.22
+########## Menu ##########
+1: Search
+2: Load the Database From File
+3: Build New Database (requires NewsApi Key)
+4: Get Statistics
+5: Save State
+6: Exit
+Your Choice: No 
+##########################
+########## Menu ##########
+1: Search
+2: Load the Database From File
+3: Build New Database (requires NewsApi Key)
+4: Get Statistics
+5: Save State
+6: Exit
+Your Choice: 6
+##########################
