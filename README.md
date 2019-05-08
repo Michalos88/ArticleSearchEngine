@@ -1,8 +1,8 @@
 # Article Search Engine 
 
 This is a simple implementation of a search engine using Trie data structure as an index holder and TF-IDF for ranking. 
-Basically entire vocabulary of words from articles is stored in a Trie, a leaf of each word is and index of the word in occupancy table. 
-Occupancy table is python `dict()` aka look-up table that points to uuid's of articles (stored in a db) containing the word from the trie.
+Basically entire vocabulary of words from articles is stored in a Trie, a leaf of each word is an index of the word in occupancy table. 
+Occupancy table is python `dict()` aka look-up table that points to uuid's of articles (stored in a db) containing the word from the Trie.
 Given a query the search engine first finds superset of articles containing any of the words from the query. It then creates a TF-IDF matrix of words in these articles.
 Then the program ranks the articles based on the mean TF-IDF scores of query words in each article. 
 
