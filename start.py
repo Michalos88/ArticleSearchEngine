@@ -7,13 +7,11 @@ logger = logging.getLogger(__name__)
 
 """Constants"""
 DB = './db/'
-# SOURCES = ['cnn','cnbc','bloomberg','fox-news','techcrunch','msnbc',
-#                   'abc-news','espn','financial-post','fox-sports','mashable',
-#                   'new-york-magazine','recode','the-economist']
-SOURCES = ['cnn']
+SOURCES = ['cnn','cnbc','bloomberg','fox-news','techcrunch','msnbc',
+                  'abc-news','espn','financial-post','fox-sports','mashable',
+                  'new-york-magazine','recode','the-economist']
 
 se = SearchEngine()
-
 
 run=True
 while run:
@@ -21,7 +19,7 @@ while run:
   print("1: Search")
   print("2: Load the Database From File")
   print("3: Build New Database (requires NewsApi Key)")
-  print("4: Print Trie")
+  print("4: Get Statistics")
   print("5: Save State")
   print("6: Exit")
   selection = input("Your Choice: ")
@@ -29,16 +27,18 @@ while run:
 
   if selection=='1':
     if not se.trie.isEmpty():
-      search_query = input('Your Query:')
-      results = se.query(search_query)
-      print(results)
+      search_query = input('Your Query: ')
+      se.query(search_query)
     else:
       print('The Search Engine is empty!')
       print('Load or Build the DataBase!')
   elif selection == '2':
     try:
       with open('searchEngine_state.pkl','rb') as f:
-        se = pickle.load(f)
+        se_load = pickle.load(f)
+        se.trie = se_load.trie
+        se.occupancy = se_load.occupancy
+        # se.db = se_load.db
       print('SearchEngine State Loaded')
     except FileNotFoundError:
       print('Search Engine State Not Found')
@@ -50,7 +50,8 @@ while run:
       se.addPages(articles)
   elif selection =='4':
     if not se.trie.isEmpty():
-      se.trie.show()
+      print("Number of words in Search Engine:",se.trie.topIndex)
+      # print("Number of articles in the Database:",len(se.occupancy))
     else:
       print('The Search Engine is empty!')
       print('Load or Build the DataBase!')

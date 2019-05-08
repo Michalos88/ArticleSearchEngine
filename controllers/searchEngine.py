@@ -2,9 +2,12 @@ from controllers.trie import Trie
 from controllers.utils import checkNltkData
 from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.corpus import stopwords
-# from sklearn.feature_extraction.text import TfidfVectorizer
-
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+import json
+import pandas as pd
 import logging
+import numpy as np
 import re
 
 checkNltkData()
@@ -13,9 +16,11 @@ stopWords = stopwords.words('english')
 class SearchEngine:
   def __init__(self,
               trie=Trie(),
-              occupancy=dict()):
+              occupancy=dict(),
+              db='./db/'):
     self.trie = trie
     self.occupancy = occupancy
+    self.db = db
 
   def addPages(self, pages):
     for page in pages:
@@ -29,8 +34,8 @@ class SearchEngine:
 
   ### TODO: DECIDE IF YOU WANT TO GIVE ARTICLES WITH HALF QUERY
   def query(self, query):
-    output = list()
-    words = word_tokenize(query)
+    selected_ids = list()
+    words = self._clean_text(query)
     words = list(set(words))
     putativeMatches = list()
     for word in words:
@@ -41,15 +46,48 @@ class SearchEngine:
     uniqueMatches = list(set(putativeMatches))
     for match in uniqueMatches:
       if putativeMatches.count(match) >= len(words):
-        output.append(match)
-    return output
+        selected_ids.append(match)
+    if len(selected_ids)>0:
+      pages = self._retrieve_documents(selected_ids).dropna(axis=0)
+      texts = pages['content'].values.tolist()
+      pages['ranking'] = self._rank(texts, words)
+      pages = pages.sort_values('ranking',ascending=False)
+      for i in range(0,len(pages.index.tolist()),1):
+        if i < 6:
+          page = pages.iloc[i]
+          print("##########################")
+          print("Title:",page['title'])
+          print("Author:",page['author'])
+          print("Source:",page['source']['name'])
+          print("Excerpt:",page['content'][0:350])
+          print("Relevancy Score:",round(page['ranking']*100,2))
+        else:
+          break
+    else:
+      print('No Pages Matching The Query')
 
   def _retrieve_documents(self, ids):
     pages = list()
-    pass
+    for id_ in ids:
+      try:
+        with open(self.db+id_+'.json','r') as f:
+          pages.append(json.load(f))
+      except:
+        logging.error("Can't Find Document with id",id_)
 
-  def _rank(self, pages):
-    pass
+    return pd.DataFrame(pages)
+
+  def _rank(self, documents, words):
+    tfidfVectorizer = TfidfVectorizer()
+    tfidfMatrix = tfidfVectorizer.fit_transform(documents)
+    tfidfMatrix = tfidfMatrix.toarray()
+    ranking = np.zeros((len(documents),1))
+    for word in words:
+      if word in tfidfVectorizer.vocabulary_.keys():
+        idx = tfidfVectorizer.vocabulary_[word]
+        ranking+=tfidfMatrix[:,idx].reshape(-1,1)
+    ranking = ranking/len(documents)
+    return ranking
 
   def _clean_text(self, text):
     links = re.findall(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', text)

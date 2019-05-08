@@ -1,6 +1,4 @@
 import nltk
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
 from newspaper import Article
 
 
@@ -18,13 +16,6 @@ def parseArticle(url):
 
   return text
 
-def computeSimilarityScores(mainText, documents):
-  documents.append(mainText)
-
-  tfidfVectorizer = TfidfVectorizer()
-  tfidfMatrix = tfidfVectorizer.fit_transform(documents)
-  cosSim =  cosine_similarity(tfidfMatrix[-1], tfidfMatrix)
-  return list(cosSim[0])
 
 def checkNltkData():
   modules = ['stopwords','punkt']
